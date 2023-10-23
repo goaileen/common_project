@@ -1,29 +1,25 @@
 body {
     background-color: rgb(224, 236, 242);
     color: rgb(78, 53, 135);
+    text-align: center;
 
 }
 h1 {
     font-size: xx-large;
     font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
 }
 h2 {
     font-size: x-large;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: rgb(99, 99, 146);
-}
-
-h2:hover {
-    /* animation this instead */
-    color:rgb(119, 51, 131);
-    font-size: xx-large;
+    text-decoration: underline;
 }
 
 h3 {
     font-size: x-large;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: rgb(80, 121, 216);
+    border: dashed 4px rgb(236, 246, 255);
 }
 
 p {
@@ -36,20 +32,24 @@ img, video {
     margin: 20px;
     border-top-right-radius: 30px;
     display: block;
-    margin: auto;
+    margin: 20px auto;
 }
+
 li {
     display: inline-block;
     margin-left: 50px;
+    margin-right: 50px;
     height: 50px;
 }
-ul {
-    text-align: center;
-}
+
+/* ol {
+    margin: 20px;
+    padding: 10px;
+} */
+
 nav {
     border: 3px solid #b7a0bb;
     background-color: rgb(230, 225, 218);
-    
 }
 
 nav a {
@@ -63,29 +63,45 @@ a{
 nav ul li a {
     text-decoration: none;
 }
-nav ul li a:hover {
+
+.overview {
+    color: black;
+    grid-column: 1/-1;
+    text-align: center;
+    font-size: 40px;
+    padding: 20px;
+}
+  main {
+    padding: 30px;
+  }
+
+  /* The animation code */
+@keyframes example {
+    from {background-color: rgb(230, 225, 218);}
+    to {background-color: #c3abc0;}
+  }
+
+  /* / The element to apply the animation to  */
+  nav ul li a:hover {
     background-color: #c3abc0;
     color:aliceblue;
     text-decoration: underline;
     border: solid 2px rgb(87, 87, 124);
     font-size: larger;
+    
+    width: 100px;
+    height: 100px;
+    animation-name: example;
+    animation-duration: 1s;
 }
 
-.imgs_grid {
- display: grid;
- text-align: center;
-
-}
-.imgs_grid img {
-display: block;
-
-
-}
-.imgs_grid h3 {
-    border: dashed 4px rgb(236, 246, 255);
-}
-.imgs_grid ul {
-    text-align: center;
+  .imgs_grid {
+    display: grid;
+    grid-template-columns: repeat(2, 3fr);
+    gap: 5px;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
 }
 
 .current {
@@ -100,10 +116,28 @@ display: block;
     text-transform: uppercase;
     position: absolute;
     left: -500px;
+    display: none;
 }
+
 #skip:focus{
     left: 10px;
 }
+
+@media only screen and (min-width: 768px) {
+    body {
+        background-color: rgb(157, 182, 225);
+    }
+  }
+
+@media (prefers-reduced-motion: reduce){
+   /* turn off animate here and no gif*/
+   nav ul li a:hover {
+    animation: none;
+   }
+   img[src$=".gif"] {
+    display: none; 
+    }
+  }
 
 /* 
 .thumbnail {
@@ -114,7 +148,3 @@ display: block;
     display: block;
     border-radius: 25px;
 } */
-
-@media only screen and (min-width:768px){
-
-  }
