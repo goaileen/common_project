@@ -13,42 +13,89 @@ h2 {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: rgb(99, 99, 146);
 }
+
+h2:hover {
+    /* animation this instead */
+    color:rgb(119, 51, 131);
+    font-size: xx-large;
+}
+
 h3 {
     font-size: x-large;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: rgb(80, 121, 216);
-
 }
+
 p {
 line-height: 4vh;
 }
 
-img {
+img, video {
     border: 5px solid rgb(94, 94, 149);
     padding: 10px;
     margin: 20px;
     border-top-right-radius: 30px;
+    display: block;
+    margin: auto;
 }
 li {
     display: inline-block;
     margin-left: 50px;
+    height: 50px;
+}
+ul {
+    text-align: center;
 }
 nav {
     border: 3px solid #b7a0bb;
+    background-color: rgb(230, 225, 218);
+    
 }
-li {
-    display: inline-block;
-    height: 50px;
-}
+
 nav a {
-    background-color: rgb(168, 235, 255);
+    background-color: rgb(244, 247, 248);
     padding: 5px;
+    font-size: 17.5px;
 }
 a{
-    text-align: underline;
-    border: solid blue;
+    border: dashed 1.5px rgb(116, 116, 220);
+}
+nav ul li a {
+    text-decoration: none;
+}
+nav ul li a:hover {
+    background-color: #c3abc0;
+    color:aliceblue;
+    text-decoration: underline;
+    border: solid 2px rgb(87, 87, 124);
+    font-size: larger;
+}
+
+.imgs_grid {
+ display: grid;
+ text-align: center;
 
 }
+.imgs_grid img {
+display: block;
+
+
+}
+.imgs_grid h3 {
+    border: dashed 4px rgb(236, 246, 255);
+}
+.imgs_grid ul {
+    text-align: center;
+}
+
+.current {
+    text-decoration: underline;
+    background-color: #af85aa;
+    color:aliceblue;
+    border: solid 2px rgb(62, 62, 106);
+    font-size: x-large;
+}
+
 #skip {
     text-transform: uppercase;
     position: absolute;
@@ -60,12 +107,14 @@ a{
 
 /* 
 .thumbnail {
-    border: coral;
+    border: solid 2px coral;
     padding: 20px;
     margin: auto;
     width: 250px;
     display: block;
     border-radius: 25px;
-
 } */
 
+@media only screen and (min-width:768px){
+
+  }
