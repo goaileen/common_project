@@ -17,6 +17,7 @@ h3 {
     font-size: x-large;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: rgb(80, 121, 216);
+
 }
 p {
 line-height: 4vh;
@@ -50,6 +51,11 @@ a{
 }
 #skip {
     text-transform: uppercase;
+    position: absolute;
+    left: -500px;
+}
+#skip:focus{
+    left: 10px;
 }
 
 /* 
@@ -62,3 +68,4 @@ a{
     border-radius: 25px;
 
 } */
+
