@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(224, 236, 242);
+    background-color: #E6E6E6;
     color: rgb(78, 53, 135);
     text-align: center;
 
@@ -11,15 +11,15 @@ h1 {
 h2 {
     font-size: x-large;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: rgb(99, 99, 146);
+    color: #5A5A87;
     text-decoration: underline;
 }
 
 h3 {
     font-size: x-large;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: rgb(80, 121, 216);
-    border: dashed 4px rgb(236, 246, 255);
+    color: #0E417C;
+    border: dashed 4px rgb(21, 49, 73);
 }
 
 p {
@@ -78,12 +78,12 @@ nav ul li a {
   /* The animation code */
 @keyframes example {
     from {background-color: rgb(230, 225, 218);}
-    to {background-color: #c3abc0;}
+    to {background-color: #946190;}
   }
 
   /* / The element to apply the animation to  */
   nav ul li a:hover {
-    background-color: #c3abc0;
+    background-color: #946190;
     color:aliceblue;
     text-decoration: underline;
     border: solid 2px rgb(87, 87, 124);
@@ -106,7 +106,7 @@ nav ul li a {
 
 .current {
     text-decoration: underline;
-    background-color: #af85aa;
+    background-color: #946190;
     color:aliceblue;
     border: solid 2px rgb(62, 62, 106);
     font-size: x-large;
@@ -125,7 +125,7 @@ nav ul li a {
 
 @media only screen and (min-width: 768px) {
     body {
-        background-color: rgb(157, 182, 225);
+        background-color: #98B7E1;
     }
   }
 
